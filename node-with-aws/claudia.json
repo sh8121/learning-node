@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "node-with-aws-executor",
+    "name": "node-with-aws",
+    "region": "ap-northeast-2"
+  }
+}

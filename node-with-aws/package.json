@@ -1,0 +1,15 @@
+{
+	"name": "node-with-aws",
+	"version": "1.0.0",
+	"main": "app.js",
+	"author": "sboo",
+	"license": "MIT",
+	"devDependencies": {
+		"claudia": "^5.12.0"
+	},
+	"scripts": {
+		"deploy-to-aws": "claudia create --region ap-northeast-2 --handler app.handler --profile claudia",
+		"update": "claudia update --profile claudia",
+		"test": "claudia test-lambda --profile claudia --event event.json"
+	}
+}

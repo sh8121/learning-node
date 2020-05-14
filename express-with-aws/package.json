@@ -1,0 +1,23 @@
+{
+	"name": "express-with-aws",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"create-lambda": "claudia generate-serverless-express-proxy --express-module app",
+		"deploy-to-aws": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-northeast-2 --profile claudia",
+		"update": "claudia update --profile claudia"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"aws-serverless-express": "^3.3.8",
+		"cookie-parser": "^1.4.5",
+		"ejs": "^3.1.2",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"claudia": "^5.12.0"
+	}
+}
