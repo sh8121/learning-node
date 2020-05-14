@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"create-lambda": "claudia generate-serverless-express-proxy --express-module app",
-		"deploy-to-aws": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-northeast-2 --profile claudia",
+		"deploy-to-aws": "claudia create --handler lambda.handler --region ap-northeast-2 --profile claudia",
 		"update": "claudia update --profile claudia"
 	},
 	"author": "",

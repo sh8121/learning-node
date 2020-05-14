@@ -19,6 +19,6 @@ app.get("/test", (req, res) => {
 	res.send("Test");
 });
 
-app.listen(3000);
+//app.listen(3000);
 
-// module.exports = app;
+module.exports = app;
